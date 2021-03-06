@@ -12,7 +12,7 @@ fn main() {
     println!(
         "Hi, my name is {}, I'm {}, I have {} kids, and my favorite color is {}",
         name, age, children, favorite_color
-    )
+    );
 
     match c {
         Color::Red(s) => println!("C is Red{}", s),
@@ -21,6 +21,10 @@ fn main() {
         Color::Yellow => println!("C is Yellow{}", s),
         Color::Blue => println!("C is Blue{}", s),
         Color::Cyan => println!("C is Cyan{}", s),
+    }
+
+    for(color in Color){
+        println!("Current color is: {}", color);
     }
 }
 
