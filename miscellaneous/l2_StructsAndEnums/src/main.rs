@@ -3,28 +3,20 @@ fn main() {
         name:"Jon".to_string(),
         age: 25,
         children: 0,
-        favorite_color: Color::Red,
+        favorite_color: Color::Purple,
     };
 
     let c = Color::Red(", and an enum".to_string());
 
     println!("Hello, people, from {:?}", p);
-    println!(
-        "Hi, my name is {}, I'm {}, I have {} kids, and my favorite color is {}",
-        name, age, children, favorite_color
-    );
 
     match c {
         Color::Red(s) => println!("C is Red{}", s),
-        Color::Purple => println!("C is Purple{}", s),
-        Color::Green => println!("C is Green{}", s),
-        Color::Yellow => println!("C is Yellow{}", s),
-        Color::Blue => println!("C is Blue{}", s),
-        Color::Cyan => println!("C is Cyan{}", s),
-    }
-
-    for(color in Color){
-        println!("Current color is: {}", color);
+        Color::Purple => println!("C is Purple"),
+        Color::Green => println!("C is Green"),
+        Color::Yellow => println!("C is Yellow"),
+        Color::Blue => println!("C is Blue"),
+        Color::Cyan => println!("C is Cyan"),
     }
 }
 
