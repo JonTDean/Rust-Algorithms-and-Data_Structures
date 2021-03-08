@@ -31,7 +31,7 @@ pub struct Person {
 #[derive(Debug)]
 pub enum Color {
     Red(String),
-    Purple,
+    Purple = "Purple".to_string(),
     Green,
     Yellow,
     Blue,

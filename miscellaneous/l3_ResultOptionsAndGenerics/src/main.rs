@@ -22,4 +22,5 @@ fn divide(a:i32, b:i32) -> Result<i32, String>{
         return Err("Cannot divide by zero".to_string());
     }
     Ok(a / b)
+    
 }
